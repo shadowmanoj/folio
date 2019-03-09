@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Shadows</title>
+    
+    <style>
+        html { 
+  background: url(mypic.jpg) no-repeat center fixed; 
+  background-size: cover;}
+
+
+    </style>
+</head>
+<body id = "page-top">
+    <!--NavBar Starts here-->
+    <nav class="navbar fixed-top", id="main-navbar">
+        <div class="container">
+            <a href="#page-top">MANOJ FOLIO</a>
+            <button>
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div id="navbarDefault">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#services">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#contact">Contact</a>
+                        </li>
+                        
+
+                    </ul>
+                </div>
+        </div>
+        
+    </nav>
+    <div class="content">
+        <div class="content_container">
+            <p class="content_container_text">Iam</p>
+            <ul class="content_container_list">
+                <li class="content_container_list_item">Programmer</li>
+                <li class="content_container_list_item">Cricketer</li>
+                <li class="content_container_list_item">Dreamer</li>
+                <li class="content_container_list_item">Performer</li>
+            </ul>
+        </div>
+    </div>
+
+        <style>
+body{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: #344;  
+}
+.content{
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  height: 160px;
+  overflow: hidden;
+  font-size: 35px;
+  line-height: 40px;
+  color: #ecf0f1;
+}
+.content_container{
+    font-weight: 600;
+    overflow: hidden;
+    height: 40px;
+    padding: 0 40px;
+
+}
+.content_container::before{
+    content: '[';
+    left:0;
+}
+.content_container::after{
+    content: ']';
+    position: absolute;
+    right:0;
+}
+.content_container::before,.content_container::after{
+position: absolute;
+top:0;
+color: rgb(210,95,9);
+animation: opacity 10s infinite;
+}
+.content_container_text{
+    display: inline;
+    float:left;
+    margin:0;
+
+}
+.content_container_list{
+    margin-top:0;
+    padding-left: 100px;
+    text-transform: left;
+    list-style: none;
+    animation: change 10s infinite;
+}
+.content_container_list_item{
+    line-height: 40px;
+    margin: 0;
+
+}
+@keyframes opacity{
+    0%, 100%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+}
+@keyframes change{
+ 0%, 12.66%, 100%{
+     transform: translate3d(0,0,0);
+ }
+ 16.66%, 29.32%{
+transform: translate3d(0,-25%,0);
+ }
+ 33.32%,45.93%{
+     transform: translate3d(0,50%,0);
+ }
+ 49.95%,62.64%{
+     transform: translate3d(0,-75%,0);
+ }
+ 66.64%,79.3%{
+     transform: translate3d(0,-50%,0);
+ }
+ 83.3%,93.6%{
+     transform: translate3d(0,-25%,0);
+ }
+}
+        </style> 
+</body>
+</html>
